@@ -27,23 +27,25 @@ npx tsx src/index.ts "best cloud hosting for side projects"
 
 ## Setup
 
-You need two API keys:
+You need three API keys:
 
-| Key | Where to get it | What it does |
-|-----|----------------|--------------|
-| `BRIGHTDATA_API_TOKEN` | [brightdata.com](https://brightdata.com) → Settings → API Keys | Scrapes the web reliably |
-| `ANTHROPIC_API_KEY` | [console.anthropic.com](https://console.anthropic.com) | Analyzes scraped data |
+| Key                    | Where to get it                                                | What it does                                                                                |
+| ---------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| `BRIGHTDATA_ZONE`      |                                                                | [brightdata.com](https://brightdata.com) → Web Access → What you name your Web Unlocker API |
+| `BRIGHTDATA_API_TOKEN` | [brightdata.com](https://brightdata.com) → Settings → API Keys | Scrapes the web reliably                                                                    |
+| `ANTHROPIC_API_KEY`    | [console.anthropic.com](https://console.anthropic.com)         | Analyzes scraped data                                                                       |
 
 You also need a Bright Data Web Unlocker zone (default name: `web_unlocker1`).
 
 ## Output
 
 After running, check `examples/`:
-- `output.json` — structured comparison data
-- `comparison.html` — visual HTML report
+
+-   `output.json` — structured comparison data
+-   `comparison.html` — visual HTML report
 
 ## Built With
 
-- [Bright Data Web Unlocker](https://brightdata.com/products/web-unlocker) — reliable web scraping
-- [Claude API](https://console.anthropic.com) — intelligent data extraction
-- TypeScript / Node.js
+-   [Bright Data Web Unlocker](https://brightdata.com/products/web-unlocker) — reliable web scraping
+-   [Claude API](https://console.anthropic.com) — intelligent data extraction
+-   TypeScript / Node.js
