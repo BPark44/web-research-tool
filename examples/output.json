@@ -1,0 +1,68 @@
+{
+  "query": "best cloud hosting for side projects",
+  "summary": "For side projects, developers have shifted away from Heroku following Salesforce's 2026 decision to halt new feature development. The main contenders are DigitalOcean App Platform (a Heroku alternative built on the same buildpack model), AWS (full infrastructure control but steeper learning curve), and platforms like Northflank (which offer Heroku-like simplicity with your own cloud account). DigitalOcean stands out for side projects due to low entry cost, managed infrastructure, and 2-5x better compute pricing than Heroku.",
+  "products": [
+    {
+      "name": "DigitalOcean App Platform",
+      "url": "https://www.digitalocean.com/products/app-platform",
+      "pricing": "Free tier ($0/month), Paid tier starts at $5/month",
+      "freeTier": "Up to 3 static sites, 1GiB data transfer per app, automatic HTTPS, global CDN, DDoS mitigation, unlimited team members, deployment from GitHub/GitLab",
+      "keyFeatures": [
+        "Git-based deployment (no server management)",
+        "Support for Node.js, Python, Java, Go, PHP, static sites",
+        "Managed databases 6x cheaper than Heroku",
+        "Built-in CI/CD and auto-scaling",
+        "Docker and persistent storage support"
+      ],
+      "bestFor": "Developers migrating from Heroku, side projects needing simplicity with cost-effectiveness, teams without DevOps expertise",
+      "verdict": "Strongest Heroku replacement for side projects—combines PaaS simplicity with better pricing and an active development roadmap."
+    },
+    {
+      "name": "Heroku",
+      "url": "https://www.heroku.com",
+      "pricing": "Eco $5/month, Basic $7/month per dyno, Standard $25-50/month per dyno, Performance $250-500/month per dyno",
+      "freeTier": "None (removed in 2022)",
+      "keyFeatures": [
+        "Git push deployments",
+        "Managed runtime environments",
+        "Heroku Postgres and add-ons marketplace",
+        "Built-in monitoring and logging",
+        "Support for Node.js, Ruby, Java, Python, Go, .NET, Scala"
+      ],
+      "bestFor": "Teams prioritizing simplicity and willing to pay for convenience; legacy projects already on Heroku",
+      "verdict": "No longer recommended for new projects—entering 'sustaining engineering' mode with no new features, and pricing is 2-5x higher than DigitalOcean for equivalent compute."
+    },
+    {
+      "name": "AWS",
+      "url": "https://aws.amazon.com",
+      "pricing": "Pay-as-you-go; t3.micro ~$7.50/month, t3.medium ~$30/month; Reserved Instances save up to 72%, Spot Instances up to 90%",
+      "freeTier": "12 months free for new accounts (limited service usage)",
+      "keyFeatures": [
+        "240+ cloud services (EC2, RDS, Lambda, ECS, EKS)",
+        "Full infrastructure control and customization",
+        "Full GPU access (H100, A100, V100) for custom ML training",
+        "Extensive cost optimization options",
+        "Enterprise-grade security and compliance"
+      ],
+      "bestFor": "Teams with DevOps expertise, projects requiring custom infrastructure, high-traffic applications, AI/ML workloads with GPU needs",
+      "verdict": "Powerful but complex for side projects—requires significant DevOps knowledge and architecture decisions; lowest cost at scale but steepest learning curve."
+    },
+    {
+      "name": "Northflank",
+      "url": "https://northflank.com",
+      "pricing": "See website",
+      "freeTier": "Transparent pricing with deployment in your own cloud (AWS/GCP/Azure) account",
+      "keyFeatures": [
+        "Git-based deployments like Heroku",
+        "Deploy in your own AWS/GCP/Azure account for provider pricing",
+        "Simple GPU access (H100, A100, B200)",
+        "No vendor lock-in",
+        "Combines simplicity with control"
+      ],
+      "bestFor": "Developers seeking Heroku simplicity with AWS cost efficiency; projects needing GPU access without DevOps overhead",
+      "verdict": "Middle-ground solution that bridges Heroku's simplicity and AWS's flexibility, though less established than the major alternatives."
+    }
+  ],
+  "recommendation": "For side projects, use DigitalOcean App Platform: it's the best Heroku replacement with $0-5/month entry cost, zero DevOps required, and transparent pricing. If your side project needs GPU-accelerated ML, Northflank offers simplicity with custom infrastructure. Avoid Heroku unless you're maintaining existing projects. Only choose AWS if your side project will scale significantly and you have DevOps expertise or time to learn.",
+  "timestamp": "2026-05-02T22:28:51.923Z"
+}

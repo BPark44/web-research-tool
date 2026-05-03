@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research: best cloud hosting for side projects</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0d1117; color: #e6edf3; font-family: -apple-system, 'Segoe UI', sans-serif; padding: 2rem; }
+  h1 { font-size: 1.5rem; color: #58a6ff; margin-bottom: 0.3rem; }
+  .meta { color: #8b949e; font-size: 0.85rem; margin-bottom: 1rem; }
+  .summary { color: #c9d1d9; font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem; max-width: 800px; }
+  table { width: 100%; border-collapse: collapse; background: #161b22; border-radius: 8px; overflow: hidden; }
+  th { background: #21262d; color: #58a6ff; text-align: left; padding: 12px 14px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  td { padding: 14px; border-bottom: 1px solid #21262d; font-size: 0.85rem; line-height: 1.5; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover { background: #1c2128; }
+  a { color: #58a6ff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .pricing { color: #3fb950; font-weight: 600; }
+  .free-tier { color: #d29922; }
+  .features { color: #c9d1d9; font-size: 0.8rem; }
+  .best-for { color: #8b949e; font-size: 0.8rem; }
+  .verdict { color: #8b949e; font-size: 0.75rem; margin-top: 4px; font-style: italic; }
+  .recommendation { margin-top: 1.5rem; padding: 1rem; background: #1f6feb15; border: 1px solid #1f6feb33; border-radius: 8px; color: #c9d1d9; font-size: 0.9rem; line-height: 1.5; }
+  .recommendation strong { color: #58a6ff; }
+  .badge { display: inline-block; background: #1f6feb22; color: #58a6ff; padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; margin-bottom: 1rem; border: 1px solid #1f6feb44; }
+  .footer { margin-top: 1.5rem; color: #484f58; font-size: 0.7rem; }
+</style>
+</head>
+<body>
+  <span class="badge">Built with Bright Data + Claude</span>
+  <h1>best cloud hosting for side projects</h1>
+  <p class="meta">5/3/2026 · 4 products compared</p>
+  <p class="summary">For side projects, developers have shifted away from Heroku following Salesforce's 2026 decision to halt new feature development. The main contenders are DigitalOcean App Platform (a Heroku alternative built on the same buildpack model), AWS (full infrastructure control but steeper learning curve), and platforms like Northflank (which offer Heroku-like simplicity with your own cloud account). DigitalOcean stands out for side projects due to low entry cost, managed infrastructure, and 2-5x better compute pricing than Heroku.</p>
+  <table>
+    <thead><tr><th>Product</th><th>Pricing</th><th>Free Tier</th><th>Features</th><th>Best For</th></tr></thead>
+    <tbody>
+    <tr>
+      <td>
+        <strong><a href="https://www.digitalocean.com/products/app-platform" target="_blank">DigitalOcean App Platform</a></strong>
+        <div class="verdict">Strongest Heroku replacement for side projects—combines PaaS simplicity with better pricing and an active development roadmap.</div>
+      </td>
+      <td class="pricing">Free tier ($0/month), Paid tier starts at $5/month</td>
+      <td class="free-tier">Up to 3 static sites, 1GiB data transfer per app, automatic HTTPS, global CDN, DDoS mitigation, unlimited team members, deployment from GitHub/GitLab</td>
+      <td class="features"><div>• Git-based deployment (no server management)</div><div>• Support for Node.js, Python, Java, Go, PHP, static sites</div><div>• Managed databases 6x cheaper than Heroku</div><div>• Built-in CI/CD and auto-scaling</div><div>• Docker and persistent storage support</div></td>
+      <td class="best-for">Developers migrating from Heroku, side projects needing simplicity with cost-effectiveness, teams without DevOps expertise</td>
+    </tr>
+    <tr>
+      <td>
+        <strong><a href="https://www.heroku.com" target="_blank">Heroku</a></strong>
+        <div class="verdict">No longer recommended for new projects—entering 'sustaining engineering' mode with no new features, and pricing is 2-5x higher than DigitalOcean for equivalent compute.</div>
+      </td>
+      <td class="pricing">Eco $5/month, Basic $7/month per dyno, Standard $25-50/month per dyno, Performance $250-500/month per dyno</td>
+      <td class="free-tier">None (removed in 2022)</td>
+      <td class="features"><div>• Git push deployments</div><div>• Managed runtime environments</div><div>• Heroku Postgres and add-ons marketplace</div><div>• Built-in monitoring and logging</div><div>• Support for Node.js, Ruby, Java, Python, Go, .NET, Scala</div></td>
+      <td class="best-for">Teams prioritizing simplicity and willing to pay for convenience; legacy projects already on Heroku</td>
+    </tr>
+    <tr>
+      <td>
+        <strong><a href="https://aws.amazon.com" target="_blank">AWS</a></strong>
+        <div class="verdict">Powerful but complex for side projects—requires significant DevOps knowledge and architecture decisions; lowest cost at scale but steepest learning curve.</div>
+      </td>
+      <td class="pricing">Pay-as-you-go; t3.micro ~$7.50/month, t3.medium ~$30/month; Reserved Instances save up to 72%, Spot Instances up to 90%</td>
+      <td class="free-tier">12 months free for new accounts (limited service usage)</td>
+      <td class="features"><div>• 240+ cloud services (EC2, RDS, Lambda, ECS, EKS)</div><div>• Full infrastructure control and customization</div><div>• Full GPU access (H100, A100, V100) for custom ML training</div><div>• Extensive cost optimization options</div><div>• Enterprise-grade security and compliance</div></td>
+      <td class="best-for">Teams with DevOps expertise, projects requiring custom infrastructure, high-traffic applications, AI/ML workloads with GPU needs</td>
+    </tr>
+    <tr>
+      <td>
+        <strong><a href="https://northflank.com" target="_blank">Northflank</a></strong>
+        <div class="verdict">Middle-ground solution that bridges Heroku's simplicity and AWS's flexibility, though less established than the major alternatives.</div>
+      </td>
+      <td class="pricing">See website</td>
+      <td class="free-tier">Transparent pricing with deployment in your own cloud (AWS/GCP/Azure) account</td>
+      <td class="features"><div>• Git-based deployments like Heroku</div><div>• Deploy in your own AWS/GCP/Azure account for provider pricing</div><div>• Simple GPU access (H100, A100, B200)</div><div>• No vendor lock-in</div><div>• Combines simplicity with control</div></td>
+      <td class="best-for">Developers seeking Heroku simplicity with AWS cost efficiency; projects needing GPU access without DevOps overhead</td>
+    </tr></tbody>
+  </table>
+  <div class="recommendation"><strong>Recommendation:</strong> For side projects, use DigitalOcean App Platform: it's the best Heroku replacement with $0-5/month entry cost, zero DevOps required, and transparent pricing. If your side project needs GPU-accelerated ML, Northflank offers simplicity with custom infrastructure. Avoid Heroku unless you're maintaining existing projects. Only choose AWS if your side project will scale significantly and you have DevOps expertise or time to learn.</div>
+  <p class="footer">Scraped by Bright Data Web Unlocker · Analyzed by Claude</p>
+</body>
+</html>
