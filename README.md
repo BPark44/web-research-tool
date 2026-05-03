@@ -35,8 +35,6 @@ You need three API keys:
 | `BRIGHTDATA_API_TOKEN` | [brightdata.com](https://brightdata.com) → Settings → API Keys | Scrapes the web reliably                                                                    |
 | `ANTHROPIC_API_KEY`    | [console.anthropic.com](https://console.anthropic.com)         | Analyzes scraped data                                                                       |
 
-You also need a Bright Data Web Unlocker zone (default name: `web_unlocker1`).
-
 ## Output
 
 After running, check `examples/`:
